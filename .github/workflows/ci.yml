@@ -17,3 +17,5 @@ jobs:
     #   run: CR_TOKEN=${{ secrets.GITHUB_TOKEN }} make upload
     - name: Index
       run: CR_TOKEN=${{ secrets.GITHUB_TOKEN }} make index
+    - name: Debug
+      run: cat charts/index.yaml
