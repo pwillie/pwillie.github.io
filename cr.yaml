@@ -2,4 +2,3 @@ owner: pwillie
 git-repo: pwillie.github.io
 package-path: build
 charts-repo: https://pwillie.github.io
-index-path: charts/index.yaml
