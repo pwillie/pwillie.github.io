@@ -3,6 +3,15 @@ services:
   cr:
     image: quay.io/helmpack/chart-releaser:latest
     entrypoint: []
+    environment:
+      - CR_TOKEN
+    volumes:
+      - .:/work
+    working_dir: /work
+
+  helm:
+    image: alpine/helm:3.1.2
+    entrypoint: []
     volumes:
       - .:/work
     working_dir: /work
