@@ -14,6 +14,3 @@ index:
 ## Scans a path for Helm chart packages and creates releases in the specified GitHub repo uploading the packages
 upload:
 	docker-compose run --rm cr cr upload --config cr.yaml
-
-blah:
-	docker-compose run --rm cr find charts
