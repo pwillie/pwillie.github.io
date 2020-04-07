@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   cr:
-    image: quay.io/helmpack/chart-releaser:latest
+    image: pwillie/chart-releaser:local
     entrypoint: []
     environment:
       - CR_TOKEN
