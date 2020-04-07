@@ -5,7 +5,7 @@ include Makehelp.mk
 ###Charts
 ## Package up helm charts
 package:
-	docker-compose run --rm helm helm package charts/* --destination build/
+	docker-compose run --rm helm helm package $$(find charts -type d -d 1) --destination build/
 
 ## Update a Helm chart repository index.yaml file based on a the given GitHub repository's releases
 index:
