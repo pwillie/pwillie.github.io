@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  cr:
+    image: quay.io/helmpack/chart-releaser:latest
+    entrypoint: []
+    volumes:
+      - .:/work
+    working_dir: /work
