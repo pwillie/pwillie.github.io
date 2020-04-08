@@ -47,7 +47,7 @@ The following tables lists configurable parameters of the vault-secrets-webhook 
 | debug                            | debug logs for webhook                                                       | `false`                             |
 | image.pullPolicy                 | image pull policy                                                            | `IfNotPresent`                      |
 | image.repository                 | image repo that contains the admission server                                | `pwillie/ssm-secrets-webhook`       |
-| image.tag                        | image tag                                                                    | `1.0.1`                             |
+| image.tag                        | image tag                                                                    | `0.1.1` |
 | image.imagePullSecrets           | image pull secrets for private repositories                                  | `[]`                                |
 | namespaceSelector                | namespace selector to use, will limit webhook scope                          | `{}`                                |
 | nodeSelector                     | node selector to use                                                         | `{}`                                |
@@ -60,7 +60,7 @@ The following tables lists configurable parameters of the vault-secrets-webhook 
 | tolerations                      | tolerations to add                                                           | `[]`                                |
 | rbac.enabled                     | use rbac                                                                     | `true`                              |
 | rbac.psp.enabled                 | use pod security policy                                                      | `false`                             |
-| env.SSM_ENV_IMAGE                | ssm-env image                                                                | `pwillie/ssm-env:1.0.1`      |
+| env.SSM_ENV_IMAGE                | ssm-env image                                                                | `pwillie/ssm-env:0.1.1`      |
 | volumes                          | extra volume definitions                                                     | `[]`                                |
 | volumeMounts                     | extra volume mounts                                                          | `[]`                                |
 | configMapMutation                | enable injecting values from Vault to ConfigMaps                             | `false`                             |
