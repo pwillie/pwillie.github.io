@@ -17,7 +17,7 @@ certificate:
         crt:
 image:
   repository: pwillie/ssm-secrets-webhook
-  tag: v0.1.2
+  tag: v0.2.0
   pullPolicy: IfNotPresent
   imagePullSecrets: []
 
@@ -28,7 +28,7 @@ service:
   internalPort: 8443
 
 env:
-  SSM_ENV_IMAGE: pwillie/ssm-env:v0.1.2
+  SSM_ENV_IMAGE: pwillie/ssm-env:v0.2.0
   SSM_ENV_IMAGE_PULL_POLICY: IfNotPresent
 
 metrics:
